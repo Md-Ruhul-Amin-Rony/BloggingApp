@@ -19,6 +19,11 @@ export class CategoryListComponent implements OnInit {
   ngOnInit(): void {
    this.categories$ = this.CategoryService.getAllCategories();
   }
+onSearch(query:string){
+  this.categories$ = this.CategoryService.getAllCategories(query);
+
+}
+
 
   }
 
