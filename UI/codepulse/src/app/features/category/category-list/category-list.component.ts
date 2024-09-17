@@ -23,6 +23,10 @@ onSearch(query:string){
   this.categories$ = this.CategoryService.getAllCategories(query);
 
 }
+sort(sortBy:string, sortDirection:string){
+  this.categories$ = this.CategoryService.getAllCategories(undefined,sortBy,sortDirection);  
+
+}
 
 
   }
